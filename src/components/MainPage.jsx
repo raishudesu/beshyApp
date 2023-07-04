@@ -12,6 +12,7 @@ function MainPage() {
 
   const copyToClipboard = () => {
     copy(text.replace(/\s/g, "🤸🏻‍♀️"));
+    setText("")
     setOpenModal(true);
   };
   const closeModal = () => {
@@ -58,10 +59,10 @@ function MainPage() {
       <CopyModal open={openModal} />
       <div className="flex justify-center items-center h-full">
         <div className="w-[100%] sm:w-[80%] md:w-[50%] lg:w-[30%] p-6 flex flex-col justify-center items-center gap-6">
-          <h1 className="text-5xl ">🤸🏻‍♀️Beshy🤸🏻‍♀️</h1>
+          <h1 className="text-5xl ">🤸🏻‍♀️Beshify🤸🏻‍♀️</h1>
           <input
             type="text"
-            placeholder="Enter text"
+            placeholder="Beshify text"
             className="p-2 border-2 rounded-lg bg-transparent w-full"
             value={text}
             onChange={handleChange}

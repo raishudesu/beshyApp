@@ -15,7 +15,7 @@ function CopyModal({ open }) {
       animate={inView ? "visible" : "hidden"}
       variants={fadeIn}
       transition={{ duration: 0.2 }}
-      className="text-white absolute w-full h-screen"
+      className="text-white absolute w-full"
     >
       <div className="flex justify-center ">
         <div className="p-4 bg-gray-400 rounded-lg">
