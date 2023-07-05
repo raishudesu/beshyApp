@@ -50,8 +50,8 @@ function MainPage() {
           </button>
         </div>
 
-        <div className="w-xl h-80 p-4 bg-gray-500 rounded-b-lg">
-          <p>{text.replace(/\s/g, "🤸🏻‍♀️")}</p>
+        <div className="w-xl h-80 p-4 bg-gray-500 rounded-b-lg overflow-y-scroll no-scrollbar">
+          <p className="break-words">{text.replace(/\s/g, "🤸🏻‍♀️")}</p>
         </div>
       </div>
     );
