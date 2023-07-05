@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { AiFillGithub } from 'react-icons/ai'
+import { FaReact } from 'react-icons/fa'
+import { BiLogoTailwindCss } from 'react-icons/bi'
 import CopyModal from "./CopyModal";
 import copy from "copy-to-clipboard";
 import { BsFillClipboardCheckFill } from "react-icons/bs";
@@ -57,9 +60,9 @@ function MainPage() {
   return (
     <div className="w-full h-screen bg-[#282A3A] text-white">
       <CopyModal open={openModal} />
-      <div className="flex justify-center items-center h-full">
-        <div className="w-[100%] sm:w-[80%] md:w-[50%] lg:w-[30%] p-6 flex flex-col justify-center items-center gap-6">
-          <h1 className="text-5xl ">🤸🏻‍♀️Beshify🤸🏻‍♀️</h1>
+      <div className="flex flex-col justify-center items-center h-full">
+        <div className="w-[100%] sm:w-[80%] md:w-[50%] lg:w-[25%] p-6 flex flex-col justify-center items-center gap-6">
+          <h1 className="text-5xl italic font-semibold ">🤸🏻‍♀️Beshify🤸🏻‍♀️</h1>
           <input
             type="text"
             placeholder="Beshify text"
@@ -68,6 +71,11 @@ function MainPage() {
             onChange={handleChange}
           />
           {text ? generatedText() : <div></div>}
+        </div>
+        <div className="flex flex-col justify-center items-center gap-2">
+          <h1>Developed By: Barysh Bacaltos</h1>
+          <h1 className="flex justify-center items-center gap-3">Made via: <FaReact size={30}/> <BiLogoTailwindCss size={30} /></h1>
+          <a href="https://github.com/raishudesu/beshyApp" target="_blank" className="flex gap-3 items-center">Source code: <AiFillGithub size={30}/></a>
         </div>
       </div>
     </div>
